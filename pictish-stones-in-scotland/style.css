@@ -1,0 +1,74 @@
+/* Basic CSS for Map and Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  background-color: lightblue;
+  color: #666;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 300%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* Set the size of the map */
+#map {
+  height: 600px;
+  width: 100%;
+  margin: auto;
+  border: 2px solid black;
+}
+
+/* Customize the search bar position */
+.leaflet-control-search {
+  z-index: 1000; /* Ensure the search bar is on top of the map */
+  position: absolute;
+  top: 10px;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Properly center the control */
+}
+
+/* Customize the zoom controls */
+.leaflet-control-zoom {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+}
+
+/* Customize popup style */
+.leaflet-popup-content {
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Customize attribution text */
+.leaflet-control-attribution {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Fullscreen Button Customization */
+.leaflet-control-fullscreen {
+  z-index: 999; /* Ensure the fullscreen button is on top */
+  position: absolute;
+  top: 10px; /* Position the button */
+  right: 10px; /* Align it to the top-right corner */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* White icon color */
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners for the button */
+  font-size: 16px;
+}
+
+/* Fullscreen Button hover effect */
+.leaflet-control-fullscreen:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+  cursor: pointer;
+}
